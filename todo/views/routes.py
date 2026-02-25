@@ -11,7 +11,7 @@ def get_todos():
     return jsonify([{
         "id": 1,
         "title": "Watch CSSE6400 Lecture",
-        "description": "Watch CSSE6400 Lecture for week 1",
+        "description": "Watch the CSSE6400 lecture on ECHO360 for week 1",
         "completed": True,
         "deadline_at": "2026-02-27T18:00:00",
         "created_at": "2026-02-20T14:00:00",
@@ -24,7 +24,7 @@ def get_todo(id):
     return jsonify([{
         "id": id,
         "title": "Watch CSSE6400 Lecture",
-        "description": "Watch CSSE6400 Lecture for week 1",
+        "description": "Watch the CSSE6400 lecture on ECHO360 for week 1",
         "completed": True,
         "deadline_at": "2026-02-27T18:00:00",
         "created_at": "2026-02-20T14:00:00",
@@ -36,7 +36,7 @@ def create_todos():
     return jsonify({
         "id": 1,
         "title": "Watch CSSE6400 Lecture",
-        "description": "Watch CSSE6400 Lecture for week 1",
+        "description": "Watch the CSSE6400 lecture on ECHO360 for week 1",
         "completed": True,
         "deadline_at": "2026-02-27T18:00:00",
         "created_at": "2026-02-20T14:00:00",
@@ -45,11 +45,11 @@ def create_todos():
 
 
 @api.route('/todos/<int:id>', methods=['PUT'])
-def update_todos(id):
+def update_todo(id):
     return jsonify({
         "id": id,
         "title": "Watch CSSE6400 Lecture",
-        "description": "Watch CSSE6400 Lecture for week 1",
+        "description": "Watch the CSSE6400 lecture on ECHO360 for week 1",
         "completed": True,
         "deadline_at": "2026-02-27T18:00:00",
         "created_at": "2026-02-20T14:00:00",
@@ -62,7 +62,7 @@ def delete_todos(id):
     return jsonify({
         "id": id,
         "title": "Watch CSSE6400 Lecture",
-        "description": "Watch CSSE6400 Lecture for week 1",
+        "description": "Watch the CSSE6400 lecture on ECHO360 for week 1",
         "completed": True,
         "deadline_at": "2026-02-27T18:00:00",
         "created_at": "2026-02-20T14:00:00",
